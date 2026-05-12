@@ -33,7 +33,6 @@ print("Bem-vindo ao Estacionamento do Shopping!")
 entrada = input("Qual a placa do carro?")
 formaacesso = input("Escolha uma forma de acesso: ")
 
-
 if formaacesso == "Ticket":
     print("Aperte o botão para emitir o seu Ticket!")
 elif formaacesso == "TAG":
