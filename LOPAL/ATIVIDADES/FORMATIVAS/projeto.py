@@ -31,11 +31,29 @@
 
 print("Bem-vindo ao Estacionamento do Shopping!")
 entrada = input("Qual a placa do carro?")
+tempo = float(input("Digite por quanto tempo o carro permaneceu no estacionamento: "))
+valor = 5 
 formaacesso = input("Escolha uma forma de acesso: ")
 
 if formaacesso == "Ticket":
     print("Aperte o botão para emitir o seu Ticket!")
-elif formaacesso == "TAG":
-    print("Acesso liberado! O valor será cobrado na folha de pagamento")
+    total = valor * tempo
+    print("O valor cobrado é de:", total)
+    print("Devolva o ticket com o pagamento na portaria do estacionamento. Pagamento em dinheiro, utilize o interfone.")
+if formaacesso == "TAG":
+    total = valor * tempo
+    print("O valor cobrado é de:", total)
+    print("Acesso liberado! O valor será cobrado na folha de pagamento!")
+if formaacesso == "Interfone":
+    print("Caso ocorra algum erro, ligue o interfone, o atendimento completo irá ser feito pelo interfone.")
 else:
-    print("Caso ocorra algum erro, recorra ao interfone, estaremos á disposição")
+    print("Agradecemos por ter escolhido nossos serviços e volte sempre!")
+
+
+relatoriosaida = input("Deseja receber o relatório do processo?")
+if relatoriosaida == "Sim":
+    print(f"Placa do carro {entrada}; Tempo de permanência {tempo}; Forma de acesso {formaacesso}; Valor pago {total}.")
+elif relatoriosaida == "Não":
+    print("Volte sempre!")
+else: 
+    print("Obrigada por confiar e escolher nossos serviços!")
