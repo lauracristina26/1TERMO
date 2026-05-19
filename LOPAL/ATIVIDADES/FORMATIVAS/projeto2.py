@@ -3,4 +3,3 @@
 # O elevador começa no andar 0 e pode ser chamado por qualquer pessoa em qualquer andar.
 # O elevador deve se mover para o andar onde a pessoa chamou, e depois para o andar destino da pessoa.
 # O elevador deve exibir mensagens indicando o andar atual, o número de pessoas no elevador, e as ações realizadas (subindo, descendo, parando). O programa deve continuar rodando até que o usuário decida encerrar.
-
