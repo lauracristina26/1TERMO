@@ -5,3 +5,5 @@
 # O elevador deve exibir mensagens indicando o andar atual, o número de pessoas no elevador, e as ações realizadas (subindo, descendo, parando). O programa deve continuar rodando até que o usuário decida encerrar.
 
 print("Bem-vindo ao Elevador de Prédio!")
+elevador = input("Aperte o botão para iniciar o elevador!")
+elevador = int(input("Digite o andar que deseja ir e quantas pessoas estão: "))
