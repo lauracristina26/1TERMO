@@ -6,4 +6,24 @@
 
 print("Bem-vindo ao Elevador de Prédio!")
 elevador = input("Aperte o botão para iniciar o elevador!")
-elevador = int(input("Digite o andar que deseja ir e quantas pessoas estão: "))
+andaratual = 0 
+
+while True: 
+    try:
+        elevador1 = int(input("Digite o andar desejado (0-10): "))
+        if elevador1 < 0 or elevador1 > 10: 
+            raise ValueError("Andar inválido. Por favor, digite um número entre 0 a 10 para garantir o funcionamento do elevador!")
+        print(f"Elevador em funcionamento, mudando {andaratual} para o andar desejado {elevador1}")
+        andaratual = elevador1
+        print(f"Chegamos ao seu andar {elevador1}!")
+        capacidade1 = int(input("Digite quantas pessoas estão no elevador:"))
+        if capacidade1 < 0 or capacidade1 > 5: 
+            raise ValueError("Número inválido. Por favor, respeite a capacidade do Elevador para o seu funcionamento!")
+        print(f"Elevador em funcionamento, mudando {andaratual} para o andar desejado {elevador1}, com {capacidade1} pessoas")
+        andaratual = capacidade1 
+        print(f"Chegamos ao seu andar {elevador1} com {capacidade1} de pessoas!")
+        break
+             
+    except ValueError:
+        print("Erro: Número Inválido: Por Favor, digite um número que não comprometa o funcionamento do Elevador!")
+    

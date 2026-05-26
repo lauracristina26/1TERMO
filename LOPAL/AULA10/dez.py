@@ -92,17 +92,17 @@
 # Escreva um programa que solicite ao usuário uma lista de palavras e conte quantas vezes cada palavra aparece na lista. O programa deve tratar os seguintes erros:
 # - ValueError: se o usuário digitar um valor que não seja uma string.
 
-try:
-    palavra = input("Digite uma lista de palavras separadas por espaço").split()
-    contagem = {}
-    for palavra in palavra:
-        if palavra in contagem:
-              contagem[palavra] += 1
-        else:
-              contagem[palavra] = 1
-        print("Contagem de palavras")
-        for palavra, contagem in contagem.items():
-            print(f"{palavra}: {contagem}")
-except ValueError:
-     print("Erro: Entrada Inválida: Por favor, digite uma lista separada por espaços")
+# try:
+#     palavra = input("Digite uma lista de palavras separadas por espaço").split()
+#     contagem = {}
+#     for palavra in palavra:
+#         if palavra in contagem:
+#               contagem[palavra] += 1
+#         else:
+#               contagem[palavra] = 1
+#         print("Contagem de palavras")
+#         for palavra, contagem in contagem.items():
+#             print(f"{palavra}: {contagem}")
+# except ValueError:
+#      print("Erro: Entrada Inválida: Por favor, digite uma lista separada por espaços")
      
