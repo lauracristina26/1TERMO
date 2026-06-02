@@ -25,7 +25,6 @@ lbl_titulo_pagina = tk.Label(janela, text="Aula 12: Interface Gráfica!", font=(
 btn_fechar_janela = tk.Button(janela, text="Fechar", font=("Arial", 14), bg="#e73c9a", fg="white", command=janela.destroy)
 
 
-
 # 4. Posicionar os componentes na janela
 lbl_titulo_pagina.pack(pady=20) #pady adiciona um espaçamento vertical
 btn_clique_pagina.pack(pady=10)
