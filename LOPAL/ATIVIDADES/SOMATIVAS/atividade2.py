@@ -93,19 +93,66 @@
 
 # 4. Média de Qualidade: Peça 3 notas de inspeção de uma peça (0 a 10). Exiba a média aritmética simples delas.
 
+# import tkinter as tk
+# from tkinter import messagebox
+
+# janela = tk.Tk()
+# janela.title("Média de Qualidade")
+# janela.geometry("700x300")
+# janela.configure(bg="#2600CE")
+
+# def media_qualidade():
+#     mediaqualidade = int(nota_qualidade.get())
+    
+#     if mediaqualidade == "" >10:
+#         messagebox.showwarning("Aviso!", "Digite notas da inspeção válidas para a peça!")
+#     else:
+#         mediaqualidade = mediaqualidade / 3 
+#         messagebox.showinfo("Média de Qualidade", f"A média de qualidade avaliada foi de {mediaqualidade}")
 
 
+# lbl_media = tk.Label(janela, text="Digite a primeira nota de inspeção para a peça (0-10):")
+# lbl_media.grid(row=0, column=0, pady=10, padx=10)
+# lbl_media1 = tk.Label(janela, text="Digite a segunda nota de inspeção para a peça (0-10):")
+# lbl_media1.grid(row=1, column=0, pady=10, padx=10)
+# lbl_media2 = tk.Label(janela, text="Digite a terceira nota de inspeção para a peça (0-10):")
+# lbl_media.grid(row=1, column=0, pady=10, padx=10) 
+# btn_clique = tk.Button(janela, text="Cálculo da Média", font=("Arial,11"), bg="#90A4FA", fg="black", command=media_qualidade)
+# btn_clique.grid(row=4, column=1, pady=10, padx=10)
+
+# nota_qualidade = tk.Entry(janela, font=("Arial, 14"))
+# nota_qualidade.grid(row=0, column=0, pady=10, padx=10)
+# nota_qualidade = tk.Entry(janela, font=("Arial, 14"))
+# nota_qualidade.grid(row=1, column=1, pady=10, padx=0)
+# nota_qualidade = tk.Entry(janela, font=("Arial, 14"))
+# nota_qualidade.grid(row=2, column=1, pady=10, padx=10)
 
 
-
-
-
+# janela.mainloop()
 
 
 # 5. Termostato Inteligente: Peça a temperatura de um motor.
 # ● Abaixo de 40°C: "Baixa carga".
 # ● Entre 40°C e 70°C: "Normal".
 # ● Acima de 70°C: "ALERTA: Resfriamento Ativado!".
+
+import tkinter as tk
+from tkinter import me
+
+janela = tk.Tk()
+janela.title("Termostato Inteligente!")
+janela.geometry("500x200")
+janela.configure("light pink")
+
+def termostato_inteligente():
+    
+
+
+
+
+janela.mainloop()
+
+
 # 6. Classificador de Lotes: O usuário insere o código do produto. Se começar com "A", exiba "Alimentos". Se "E", "Eletrônicos". Para qualquer outro, "Desconhecido".
 # 7. Segurança de Operação: A máquina só liga se o sensor_porta == "fechada" E o botao_emergencia == "desligado". Peça esses dois inputs e diga se a máquina pode iniciar.
 # 8. Cálculo de Descarte: Peça o total de peças produzidas e o total de defeituosas. Se o descarte for maior que 5% do total, exiba "Revisar Processo", caso contrário, "Processo Otimizado".
